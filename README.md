@@ -20,15 +20,15 @@ This project combines two publicly available datasets to enrich the analysis:
    - Source: Kaggle – Unemployment in America (Unemployment in America Per US State.csv)
    - Description: Provides unemployment rates by state across the United States.
 
-The shopping dataset's `Location` column will be mapped to states in the United States, enabling the two datasets to be combined using a common "State" variable.
+The shopping dataset's Location column will be mapped to states in the United States, enabling the two datasets to be combined using a common State variable.
 
 # Methodology
 1. **Data Cleaning:**  
    - Remove missing or inconsistent entries from both datasets.  
-   - Standardize the `Location` names in the shopping dataset to match the state names in the unemployment dataset.
+   - Standardize the Location names in the shopping dataset to match the state names in the unemployment dataset.
 
 2. **Data Integration (Enrichment):**  
-   - Merge both datasets by the `State` column to attach each customer record with that state’s unemployment rate.
+   - Merge both datasets by the State column to attach each customer record with that state’s unemployment rate.
 
 3. **Data Analysis:**  
    - Calculate the average purchase amount per state.  
