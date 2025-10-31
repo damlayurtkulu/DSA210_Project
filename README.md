@@ -15,10 +15,12 @@ This project combines two publicly available datasets to enrich the analysis:
 1. **Customer Purchase Behavior Dataset**  
    - Source: Kaggle – Customer Purchase Behaviour (shopping_behavior_updated.csv) 
    - Description: Contains demographic and behavioral information about customers in the U.S., including age, gender, location, and purchase amount.
+   - Data Set Link: https://www.kaggle.com/datasets/mubeenshehzadi/customer-purchase-behaviour
 
 2. **Unemployment in America per U.S. State Dataset**  
    - Source: Kaggle – Unemployment in America (Unemployment in America Per US State.csv)
    - Description: Provides unemployment rates by state across the United States.
+   - Data Set Link: https://www.kaggle.com/datasets/justin2028/unemployment-in-america-per-us-state
 
 The shopping dataset's location column will be mapped to states in the United States, enabling the two datasets to be combined using a common state variable.
 
