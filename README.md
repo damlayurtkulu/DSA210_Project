@@ -47,6 +47,15 @@ For each behavioral dimension tied to the research question:
    - Bar charts comparing discount usage, promo usage, and subscription rates across unemployment groups.
    - Boxplots and distribution plots for spending and purchase frequency.
    - Correlation heatmaps summarizing relationships among major variables.
+  
+# Hypotheses
+
+Based on the research question, the following hypotheses will be tested:
+
+- H1 Spending Behavior: Consumers living in states with higher unemployment rates will spend less on average per transaction.
+- H2 Purchase Frequency: Higher unemployment rates will be associated with lower purchase frequency, meaning consumers in these states shop less often.
+- H3 Discount & Promo Code Usage: Consumers in states with higher unemployment levels will show a greater likelihood of using discounts or promo codes as a cost-saving strategy.
+- H4 Subscription Status: Higher unemployment rates will correlate with lower subscription participation, as consumers in economically distressed areas may avoid or cancel subscription-based services.
 
 # Expected Outcome
 It is hypothesized that higher unemployment rates will be associated with noticeable shifts in consumer behavior across states. Customers are predicted to spend less per transaction, shop less frequently, rely more on discounts or promo codes, and exhibit lower subscription participation in areas with significant unemployment.
