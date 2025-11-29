@@ -1,13 +1,14 @@
 # The Impact of Unemployment Rates on Consumer Spending Behavior in the United States
 
 # Research Question
-Do individuals in states with higher unemployment rates spend less on average?
+How do differences in state-level unemployment rates influence multiple aspects of consumer shopping behavior including average spending per transaction, purchase frequency, discount/promo-code usage, and subscription status?
 
 # Motivation
-One of the most important measures of a nation's economic health is consumer spending. Household income and confidence frequently fall when unemployment increases, which may result in less spending.  
-The purpose of this project is to investigate whether the US exhibits this pattern: *Do residents in states with greater unemployment rates, on average, spend less money?  
+Consumer spending is one of the most important indicators of economic stability.  Households frequently face decreased income security and become more cautious with their financial decisions when unemployment increases.  These changes may have an impact on consumers' spending patterns, frequency of purchases, and reliance on discounts or subscriptions.
 
-Understanding how macroeconomic variables, including unemployment, impact routine financial behavior is the driving force behind this study. Economists and marketing experts that research customer behavior in various economic environments may find value in the findings.
+The goal of this experiment is to determine whether the US mirrors this larger economic trend: Do people who live in states with greater unemployment rates spend differently for example, by utilizing more discounts and promo codes, shopping less frequently, or spending less per purchase?
+
+Understanding how macroeconomic factors like unemployment shape everyday financial behaviors is the primary motivation behind this study. The findings may offer useful insights for economists studying consumer reactions to economic stress, as well as for businesses and marketing professionals seeking to adapt their strategies in regions with varying economic conditions.
 
 # Data Sources
 This project combines two publicly available datasets to enrich the analysis:
@@ -27,29 +28,37 @@ The shopping dataset's location column will be mapped to states in the United St
 # Methodology
 1. **Data Cleaning:**  
    - Remove missing or inconsistent entries from both datasets.  
-   - Standardize the location names in the shopping dataset to match the state names in the unemployment dataset.
+   - Standardize or map shopping-dataset locations to official U.S. state names.
+   - Convert unemployment dataset into a state-level summary (e.g., average unemployment rate).
 
 2. **Data Integration (Enrichment):**  
-   - Merge both datasets by the state column to attach each customer record with that state’s unemployment rate.
+   - Merge datasets on state to associate each consumer record with that state's unemployment rate.
+   - Create unemployment rate groupings (e.g., low, medium, high) to compare behavioral differences across economic conditions.
 
-3. **Data Analysis:**  
-   - Calculate the average purchase amount per state.  
-   - Explore the relationship between unemployment rate and spending behavior using correlation analysis and scatter plots.  
-   - Investigate whether higher unemployment rates are associated with lower consumer spending.
-
+3. **Data Analysis:**   
+For each behavioral dimension tied to the research question:
+   - Average Spending: Calculate and compare spending tendencies across unemployment groups; apply correlation and regression analysis.
+   - Purchase Frequency: Estimate frequency measures and test their relationship with unemployment levels.
+   - Discount/Promo Usage: Compare proportions of discount and promo-code usage across unemployment groups.
+   - Subscription Status: Examine how subscription adoption varies by unemployment level.
+     
 4. **Visualization:**  
-   - Plot graphs such as scatter plots and bar charts to illustrate trends and relationships between variables.
+   - Scatter plots illustrating unemployment vs. spending and unemployment vs. purchase frequency.
+   - Bar charts comparing discount usage, promo usage, and subscription rates across unemployment groups.
+   - Boxplots and distribution plots for spending and purchase frequency.
+   - Correlation heatmaps summarizing relationships among major variables.
 
 # Expected Outcome
-It is hypothesized that higher unemployment rates will correlate with lower average spending amounts across states.  
-This would support the idea that because of financial instability or lower income, customers in economically distressed places typically spend less.
+It is hypothesized that higher unemployment rates will be associated with noticeable shifts in consumer behavior across states. Customers are predicted to spend less per transaction, shop less frequently, rely more on discounts or promo codes, and exhibit lower subscription participation in areas with significant unemployment.
+Such patterns would support the idea that financial instability encourages individuals to reduce discretionary spending and adopt more cost saving strategies.
 
-If the association is weak or positive, it may indicate that variables other than unemployment alone, such the use of credit, cultural practices, or regional price disparities, are more important.
+If these correlations prove to be weak or inconsistent, it might indicate that variables other than unemployment like credit availability, local cultural customs, marketing strategies, or pricing variations have a greater impact on consumer purchasing decisions.
 
 # Limitations & Future Work
 - The datasets are aggregated by state and may not perfectly represent all individual behaviors.  
-- Income levels, living costs, and local economic factors are not directly included in this analysis.  
-- Future work could expand the dataset by including average income per state or inflation-adjusted spending to strengthen the results.
+- Income levels, living costs, and local economic factors are not directly included in this analysis.
+- The unemployment dataset provides state-level information; local or city-level economic conditions are not captured.  
+- Future work could expand this analysis by incorporating additional economic indicators such as median income, inflation rates, or consumer confidence indices for each state to better contextualize spending behavior. Instead of depending only on static comparisons, another approach would be to examine time-series patterns, which could show how consumer behavior changes as unemployment rises or falls. Additionally, exploring further behavioral dimensions—such as product category preferences, cart size, or repeat-purchase patterns—could provide a more detailed understanding of how economic conditions shape consumer decision-making.
 
 # Tools
 - **Python Libraries:** pandas, matplotlib, seaborn  
