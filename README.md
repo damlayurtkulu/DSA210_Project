@@ -63,6 +63,61 @@ Such patterns would support the idea that financial instability encourages indiv
 
 If these correlations prove to be weak or inconsistent, it might indicate that variables other than unemployment like credit availability, local cultural customs, marketing strategies, or pricing variations have a greater impact on consumer purchasing decisions.
 
+# Analysis Results
+
+ - ## H1: Relationship Between Unemployment Rate and Average Purchase Amount
+
+   This hypothesis examined whether higher unemployment rates in U.S. states correspond to a decrease in the average purchase amount per transaction. A Pearson correlation test was performed to measure the linear association between the two variables.
+   
+   Correlation coefficient: 0.0369
+   
+   P-value: 0.021
+   
+   Although the p-value is below 0.05, indicating statistical significance, the actual correlation coefficient is very close to zero. This implies that the relationship between unemployment rate and average spending is extremely weak and practically negligible. In other words, even if the association is statistically detectable, it is far too small to have any real-world significance.
+   
+   Interpretation: The data does not support the expectation that individuals in high-unemployment states spend less. Average purchase amounts remain nearly constant regardless of unemployment levels.
+
+   ### H1 is not supported.
+   
+ - ## H2: Relationship Between Unemployment Rate and Purchase Frequency
+   This hypothesis proposed that consumers in states with higher unemployment rates shop less frequently. Since purchase frequency was expressed using labels such as “Weekly,” “Monthly,” or “Annually,” these categories were converted into approximate numerical frequencies. Missing values were removed before applying Pearson correlation.
+   
+   Correlation coefficient: 0.0221
+   
+   P-value: 0.2027
+   
+   The correlation is again extremely close to zero, and the p-value is well above 0.05, indicating no statistical significance.
+   
+   Interpretation: There is no evidence that purchase frequency differs meaningfully based on unemployment rates. Consumers appear to maintain similar shopping routines regardless of the economic conditions of their state.
+   
+   ### H2 is not supported.
+   
+ - ## H3: Association Between Unemployment Group and Discount/Promo Code Usage
+   To test whether consumers in high-unemployment states rely more on discounts or promo codes, a chi-square test was conducted using unemployment groups (Low, Medium, High) and the “Discount Applied” variable.
+   
+   Chi-square statistic: 0.4648
+   
+   P-value: 0.7926
+   
+   The extremely high p-value indicates no statistically significant relationship between unemployment level and discount usage.
+   
+   Interpretation: Consumers do not appear more likely to use discounts or promotional codes simply because they live in states with higher unemployment. Discount usage remains nearly identical across all unemployment categories.
+   
+   ### H3 is not supported.
+ - ## H4: Association Between Unemployment Group and Subscription Status
+
+   This hypothesis tested whether subscription-based purchases (e.g., membership or recurring services) differ across unemployment levels. A chi-square test was conducted.
+   
+   Chi-square statistic: 0.6545
+   
+   P-value: 0.7209
+   
+   Again, the p-value is high, indicating no significant association.
+   
+   Interpretation: Subscription behavior does not change meaningfully across unemployment levels. Consumers in high-unemployment states maintain subscriptions at rates similar to those in low-unemployment states.
+   
+   ### H4 is not supported.
+
 # Limitations & Future Work
 - The datasets are aggregated by state and may not perfectly represent all individual behaviors.  
 - Income levels, living costs, and local economic factors are not directly included in this analysis.
