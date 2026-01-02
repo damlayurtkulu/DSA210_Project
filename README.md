@@ -49,6 +49,14 @@ For each behavioral dimension tied to the research question:
    - Correlation heatmaps summarizing relationships among major variables.
   
    To improve code organization and maintainability in case the project scope increases, the analysis pipeline is separated into three notebooks. The first notebook focuses on data cleaning and merging, the second notebook contains exploratory data analysis (EDA) and visualizations, and the third notebook is dedicated to statistical hypothesis testing.
+
+5. **Machine Learning (Predictive Analysis):**
+   - Construct supervised classification models to predict:
+      - Discount usage (Yes/No)
+      - Subscription status (Yes/No)
+   - Use Logistic Regression as a baseline linear model.
+   - Use Random Forest as a non-linear ensemble model.
+   - Evaluate model performance using accuracy, ROC-AUC score, confusion matrix, and classification reports.
   
 # Hypotheses
 
@@ -119,6 +127,18 @@ If these correlations prove to be weak or inconsistent, it might indicate that v
    Interpretation: Subscription behavior does not change meaningfully across unemployment levels. Consumers in high-unemployment states maintain subscriptions at rates similar to those in low-unemployment states.
    
    ### H4 is not supported.
+
+# Machine Learning Results
+   Two supervised classification tasks were performed to further explore whether consumer behaviors could be predicted using demographic, behavioral, and economic features.
+
+### Task 1: Predicting Discount Usage
+Logistic Regression and Random Forest models were trained to predict whether a discount was applied during a purchase. Both models showed limited predictive performance, with ROC-AUC scores close to 0.5. This indicates that discount usage cannot be reliably predicted using the available features, which is consistent with the earlier hypothesis testing results.
+
+### Task 2: Predicting Subscription Status
+The same models were used to predict subscription status. While overall accuracy appeared moderate due to class imbalance, both models struggled to correctly identify subscribed customers. Random Forest performed slightly better in capturing minority class instances, but overall predictive power remained weak.
+
+Overall, the machine learning results support the statistical findings: unemployment-related and behavioral variables have limited explanatory and predictive power for these consumer decisions.
+
 
 # Limitations & Future Work
 - The datasets are aggregated by state and may not perfectly represent all individual behaviors.  
