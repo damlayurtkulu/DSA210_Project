@@ -37,7 +37,7 @@ The shopping dataset's location column will be mapped to states in the United St
 
 3. **Data Analysis:**   
 For each behavioral dimension tied to the research question:
-   - Average Spending: Calculate and compare spending tendencies across unemployment groups; apply correlation and regression analysis.
+   - Average Spending: Calculate and compare spending tendencies across unemployment groups; apply correlation analysis and exploratory visualizations. Regression analysis was evaluated but not emphasized due to the absence of a meaningful linear relationship.
    - Purchase Frequency: Estimate frequency measures and test their relationship with unemployment levels.
    - Discount/Promo Usage: Compare proportions of discount and promo-code usage across unemployment groups.
    - Subscription Status: Examine how subscription adoption varies by unemployment level.
@@ -47,6 +47,8 @@ For each behavioral dimension tied to the research question:
    - Bar charts comparing discount usage, promo usage, and subscription rates across unemployment groups.
    - Boxplots and distribution plots for spending and purchase frequency.
    - Correlation heatmaps summarizing relationships among major variables.
+  
+   To improve code organization and maintainability in case the project scope increases, the analysis pipeline is separated into three notebooks. The first notebook focuses on data cleaning and merging, the second notebook contains exploratory data analysis (EDA) and visualizations, and the third notebook is dedicated to statistical hypothesis testing.
   
 # Hypotheses
 
