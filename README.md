@@ -1,5 +1,22 @@
 # The Impact of Unemployment Rates on Consumer Spending Behavior in the United States
 
+This project examines the relationship between state-level unemployment rates and consumer shopping behavior in the United States. By combining a consumer purchase dataset with U.S. unemployment data, the study explores whether economic conditions influence spending patterns, purchase frequency, discount usage, and subscription behavior. The analysis follows a full data science pipeline, including data cleaning, exploratory data analysis, statistical hypothesis testing, and supervised machine learning models.
+
+
+## Table of Contents
+
+- [Research Question](#research-question)
+- [Motivation](#motivation)
+- [Data Sources](#data-sources)
+- [Methodology](#methodology)
+- [Expected Outcome](#expected-outcome)
+- [Analysis Results](#analysis-results)
+- [Machine Learning Results](#machine-learning-results)
+- [Limitations & Future Work](#limitations--future-work)
+- [Libraries and Tools](#libraries-and-tools)
+- [How to Reproduce the Analysis](#how-to-reproduce-the-analysis)
+
+
 # Research Question
 How do differences in state-level unemployment rates influence multiple aspects of consumer shopping behavior including average spending per transaction, purchase frequency, discount/promo-code usage, and subscription status?
 
@@ -146,9 +163,32 @@ Overall, the machine learning results support the statistical findings: unemploy
 - The unemployment dataset provides state-level information; local or city-level economic conditions are not captured.  
 - Future work could expand this analysis by incorporating additional economic indicators such as median income, inflation rates, or consumer confidence indices for each state to better contextualize spending behavior. Instead of depending only on static comparisons, another approach would be to examine time-series patterns, which could show how consumer behavior changes as unemployment rises or falls. Additionally, exploring further behavioral dimensions—such as product category preferences, cart size, or repeat-purchase patterns—could provide a more detailed understanding of how economic conditions shape consumer decision-making.
 
-# Tools
-- **Python Libraries:** pandas, matplotlib, seaborn  
+# Libraries and Tools
+- **Python Libraries**:
+
+   - **pandas**: Data loading, cleaning, merging, and transformation.
+   - **numpy**: Numerical operations and feature manipulation.
+   - **matplotlib & seaborn**: Data visualization and exploratory analysis.
+   - **scipy**: Statistical hypothesis testing (Pearson correlation, Chi-square tests).
+   - **scikit-learn**: Machine learning models (Logistic Regression, Random Forest), preprocessing, and evaluation metrics.
+    
 - **Environment:** Jupyter Notebook / Google Colab
+
+# How to Reproduce the Analysis
+
+1. Clone the repository.
+2. Install dependencies using:
+   pip install -r requirements.txt
+3. The project uses two raw datasets provided in the repository:
+   - A consumer shopping behavior dataset
+   - A U.S. state-level unemployment dataset
+4. Run `DSA210_Project_Data_Cleaning.ipynb` to clean, preprocess, and merge these two datasets. This step generates the cleaned and merged dataset (`merged_clean_data.csv`) in the `data/` directory.
+5. After the merged dataset is generated, run the remaining notebooks in the following order:
+   - `DSA210_Project_EDA_part.ipynb`
+   - `DSA210_Project_Testing.ipynb`
+   - `DSA210_Project_Machine_Learning.ipynb`
+  
+
 
 *Prepared by Emine Damla Yurtkulu*  
 *Course: DSA210 – Introduction to Data Science*  
