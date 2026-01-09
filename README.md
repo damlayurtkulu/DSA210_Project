@@ -160,7 +160,8 @@ Overall, the machine learning results support the statistical findings: unemploy
 # Limitations & Future Work
 - The datasets are aggregated by state and may not perfectly represent all individual behaviors.  
 - Income levels, living costs, and local economic factors are not directly included in this analysis.
-- The unemployment dataset provides state-level information; local or city-level economic conditions are not captured.  
+- The unemployment dataset provides state-level information; local or city-level economic conditions are not captured.
+- Some classification models produced undefined precision scores for the positive class. This occurs when the model fails to predict any instances of that class, which is likely due to class imbalance and weak predictive signals in the selected features. This result suggests that unemployment-related variables alone are insufficient for accurately predicting discount usage or subscription status.
 - Future work could expand this analysis by incorporating additional economic indicators such as median income, inflation rates, or consumer confidence indices for each state to better contextualize spending behavior. Instead of depending only on static comparisons, another approach would be to examine time-series patterns, which could show how consumer behavior changes as unemployment rises or falls. Additionally, exploring further behavioral dimensions—such as product category preferences, cart size, or repeat-purchase patterns—could provide a more detailed understanding of how economic conditions shape consumer decision-making.
 
 # Libraries and Tools
