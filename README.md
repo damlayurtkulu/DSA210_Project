@@ -182,7 +182,7 @@ Overall, the machine learning results support the statistical findings: unemploy
 3. The project uses two raw datasets provided in the repository:
    - A consumer shopping behavior dataset
    - A U.S. state-level unemployment dataset
-4. Run `DSA210_Project_Data_Cleaning.ipynb` to clean, preprocess, and merge these two datasets. This step generates the cleaned and merged dataset (`merged_clean_data.csv`) in the `data/` directory.
+4. Run `DSA210_Project_Data_Cleaning.ipynb` to clean, preprocess, and merge these two datasets. This step generates the cleaned and merged dataset (`merged_clean_data.csv`) in the data directory.
 5. After the merged dataset is generated, run the remaining notebooks in the following order:
    - `DSA210_Project_EDA_part.ipynb`
    - `DSA210_Project_Testing.ipynb`
